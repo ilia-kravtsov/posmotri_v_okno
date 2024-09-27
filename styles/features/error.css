@@ -1,0 +1,19 @@
+.error {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+}
+
+.error__title {
+  color: var(--primary-font-color);
+  font-family: var(--primary-font-family), sans-serif;
+  font-weight: var(--standard-font-weight);
+  font-size: var(--large-font-size);
+  line-height: var(--large-line-height);
+  letter-spacing: -1px;
+  text-align: center;
+  text-transform: uppercase;
+}

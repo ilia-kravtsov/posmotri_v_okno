@@ -1,0 +1,40 @@
+.button {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border: var(--standard-border);
+    padding: 6px 0;
+    color: var(--primary-font-color);
+    font-family: var(--primary-font-family), sans-serif;
+    font-weight: var(--bold-font-weight);
+    font-size: var(--medium-font-size);
+    background-color: transparent;
+    cursor: pointer;
+    max-inline-size: 194px;
+    max-block-size: 34px;
+    inline-size: 100%;
+}
+
+.button:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.button:active {
+    background-color: var(--accent-color);
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:focus-visible {
+    outline: var(--standard-border);
+    outline-offset: var(--outline-offset);
+}
+
+.button:active {
+    text-decoration: none;
+    background: var(--accent-color);
+}

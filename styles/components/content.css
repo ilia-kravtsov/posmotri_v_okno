@@ -1,0 +1,116 @@
+.content {
+    display: flex;
+    align-items: end;
+    column-gap: 30px;
+    max-inline-size: var(--max-width-large);
+    inline-size: 100%;
+}
+
+.content__details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 26px;
+}
+
+.title {
+    font-family: var(--secondary-font-family), sans-serif;
+    font-weight: var(--bold-font-weight);
+    font-size: var(--enormous-font-size);
+    line-height: var(--smaller-line-height);
+    text-transform: uppercase;
+}
+
+.content__accent {
+    color: var(--accent-color);
+}
+
+.content__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 30px;
+    overflow-y: auto;
+    block-size: 298px;
+    scrollbar-width: none;
+}
+
+.content__list::-webkit-scrollbar {
+    display: none;
+}
+
+.content__list-item {
+    padding: 2px;
+}
+
+.content__card-link {
+    display: block;
+    color: var(--primary-font-color);
+    text-decoration: none;
+}
+
+.content__card-link:hover {
+    text-decoration: underline;
+}
+
+.content__card-link:focus {
+    outline: 0;
+}
+
+.content__card-link:focus-visible {
+    outline: var(--standard-border);
+    outline-offset: var(--outline-offset);
+}
+
+.content__card-link:active {
+    background: var(--accent-color);
+}
+
+.content__card-link_current {
+    background: var(--accent-color);
+}
+
+.content__video-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.content__video-card-description-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 6px;
+}
+
+.content__video-card-title {
+    font-family: var(--secondary-font-family), sans-serif;
+    font-weight: var(--bold-font-weight);
+    font-size: var(--large-font-size);
+    line-height: var(--standard-line-height);
+    text-transform: uppercase;
+}
+
+.content__video-card-description {
+    font-family: var(--primary-font-family), sans-serif;
+    font-weight: var(--standard-font-weight);
+    font-size: var(--medium-font-size);
+    line-height: var(--small-line-height);
+    word-wrap: break-word;
+    max-inline-size: 200px;
+}
+
+.content__video-card-thumbnail {
+    object-fit: cover;
+    object-position: center;
+    max-inline-size: 194px;
+    max-block-size: 103px;
+    inline-size: 100%;
+    block-size: 100%;
+}
+
+.more-button {
+    margin: 2px;
+    min-inline-size: 99%;
+}

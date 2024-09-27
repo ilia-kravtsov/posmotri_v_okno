@@ -7,8 +7,8 @@
     <title>Посмотри в окно</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/preloader.css" />
-    <link rel="stylesheet" href="./styles/error.css" />
+    <link rel="stylesheet" href="styles/features/preloader.css" />
+    <link rel="stylesheet" href="styles/features/error.css" />
   </head>
   <body class="page">
     <main class="content">
@@ -23,7 +23,7 @@
               <span class="search-form__label-text visually-hidden">Город</span>
               <input
                 type="text"
-                placeholder="Санкт Петербург, например"
+                placeholder="Санкт-Петербург, например"
                 name="city"
                 class="search-form__textfield"
               />
@@ -105,8 +105,9 @@
         </a>
       </li>
     </template>
+
     <template class="more-button-template">
-      <li><button class="button more-button">Показать еще</button></li>
+      <li><button class="button more-button">Показать ещё</button></li>
     </template>
 
     <template class="error-template">
@@ -114,6 +115,7 @@
         <h2 class="error__title"></h2>
       </div>
     </template>
+    
     <script src="./scripts/script.js"></script>
   </body>
 </html>

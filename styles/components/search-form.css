@@ -1,0 +1,108 @@
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 40px;
+}
+
+.search-form__fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+}
+
+.search-form__fieldset-title {
+    font-weight: var(--standard-font-weight);
+    font-size: var(--medium-font-size);
+}
+
+.search-form__label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.search-form__label:hover .search-form__label-text {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.search-form__label:active .search-form__label-text {
+    text-decoration: none;
+}
+
+.search-form__label:has(:focus-visible) {
+    outline: var(--standard-border);
+    outline-offset: var(--outline-offset);
+}
+
+.search-form__label-text {
+    font-weight: var(--standard-font-weight);
+    font-size: var(--medium-font-size);
+    line-height: normal;
+}
+
+.search-form__textfield {
+    border: var(--standard-border);
+    border-right: none;
+    border-left: none;
+    padding-block: 2px;
+    color: currentColor;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: var(--medium-font-size);
+    line-height: inherit;
+    background-color: transparent;
+    inline-size: 225px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.search-form__textfield::placeholder {
+    color: var(--secondary-font-color);
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    letter-spacing: -0.25px;
+}
+
+.search-form__textfield:hover {
+    cursor: text;
+}
+
+.search-form__textfield:focus {
+    outline: none;
+}
+
+.search-form__textfield:active {
+    outline: var(--standard-border);
+    outline-offset: -1px;
+}
+
+.search-form__checkbox-list {
+    display: flex;
+    column-gap: 15px;
+    inline-size: 100%;
+    max-inline-size: 212px;
+}
+
+.search-form__pseudo-checkbox {
+    display: block;
+    outline: var(--standard-border);
+    inline-size: 19px;
+    block-size: 19px;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox,
+.search-form__checkbox:active + .search-form__pseudo-checkbox {
+    border: var(--dark-border);
+    background-color: var(--primary-font-color);
+}
+
+.search-form__submit-button {
+    align-self: end;
+}

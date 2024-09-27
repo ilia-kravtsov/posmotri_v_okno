@@ -1,38 +1,17 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  block-size: 100%;
-}
+@import url(index.css);
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
+  color: var(--primary-font-color);
+  font-family: var(--primary-font-family), sans-serif;
+  font-weight: var(--standard-font-weight);
+  font-size: var(--standard-font-size);
+  font-style: normal;
+  line-height: normal;
+  background-color: var(--main-background-color);
+  inline-size: var(--main-inline-size);
+  block-size: var(--main-block-size);
 }
