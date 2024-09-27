@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: start;
     gap: 40px;
+    font-weight: var(--standard-font-weight);
+    font-size: var(--medium-font-size);
+    line-height: normal;
 }
 
 .search-form__fieldset {
@@ -13,8 +16,8 @@
 }
 
 .search-form__fieldset-title {
-    font-weight: var(--standard-font-weight);
-    font-size: var(--medium-font-size);
+    font-weight: inherit;
+    font-size: inherit;
 }
 
 .search-form__label {
@@ -39,12 +42,6 @@
     outline-offset: var(--outline-offset);
 }
 
-.search-form__label-text {
-    font-weight: var(--standard-font-weight);
-    font-size: var(--medium-font-size);
-    line-height: normal;
-}
-
 .search-form__textfield {
     border: var(--standard-border);
     border-right: none;
@@ -53,7 +50,7 @@
     color: currentColor;
     font-family: inherit;
     font-weight: inherit;
-    font-size: var(--medium-font-size);
+    font-size: inherit;
     line-height: inherit;
     background-color: transparent;
     inline-size: 225px;
