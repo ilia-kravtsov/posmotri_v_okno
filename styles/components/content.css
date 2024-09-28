@@ -31,7 +31,6 @@
     flex-direction: column;
     flex-grow: 1;
     overflow-y: auto;
-    overflow-x: hidden;
     block-size: 298px;
 }
 
@@ -86,12 +85,12 @@
 }
 
 .content__video-card-title {
+    overflow: hidden;
     font-size: var(--large-font-size);
     line-height: var(--standard-line-height);
     text-transform: uppercase;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 .content__video-card-description {
